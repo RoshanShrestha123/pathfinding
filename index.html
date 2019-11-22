@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Path Finding</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <canvas id="canvas"></canvas>
+    <div class="interaction">
+      <h2>Dijkstra's algorithm</h2>
+      <h4>By Roshan Shrestha</h4>
+
+      <button type="button" class="start"onclick="startPoint()">Start Point</button>
+      <button type="button" class="block"onclick="blockPoint()">block Point</button>
+      <button type="button" class="end" onclick="endPoint()">End Point</button><br>
+      <button type="button" class="findPath" onclick="findPath()">Find Path</button>
+
+      <div class="info">
+
+        <h5>Start Address :<span id="startAddress"></span></h5>
+        <h5>End Address :<span id="endAddress"></span></h5>
+        <h5>Path Weight :<span id="pathWeight"></span></h5>
+
+      </div>
+    </div>
+    <script type="text/javascript" src="findMinimumWeight.js"></script>
+    <script type="text/javascript" src="nextNeig.js"></script>
+      <script type="text/javascript" src="eventListener.js"></script>
+    <script type="text/javascript" src="cell.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
